@@ -6,6 +6,10 @@ This project involves creating a webpage using React.js based on a given design.
 <img width="960" alt="pic" src="https://github.com/HanikJain/netflix-clone/assets/68358443/3a1ab59a-16e2-4f46-a588-da7c739aa5da">
 ](url)
 
+## Live URL
+
+https://ed-yoda-assessment.vercel.app/
+
 ## Features
 
 - Build a webpage using React.js components
