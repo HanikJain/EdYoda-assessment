@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import './App.module.css';
+import Navbar from './components/Navbar/Navbar'
+import Layout from './components/UI/Layout'
+import CourseDetails from './components/CourseDetails/CourseDetails'
+import PlanCard from './components/PlanCard/PlanCard.jsx'
 
 function App() {
+  useEffect(() => {
+    document.title = "Edyoda";
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <> 
+      <Navbar />
+      <Layout>
+          <CourseDetails />
+          <PlanCard />
+      </Layout>
+    </>
   );
 }
 

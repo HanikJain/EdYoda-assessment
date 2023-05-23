@@ -1,0 +1,143 @@
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px;
+    border: 2px solid #BEBEBE;
+    border-radius: 4px;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease-in-out;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio {
+    display: none
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #BEBEBE;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleChecked {
+    background-color: #47BA68;
+    border: 2px solid #47BA68;
+    transition: all 0.3s ease-in-out;
+}
+
+.containerChecked {
+    background-color: #D7EDDD;
+    border: 2px solid #47BA68;
+    transition: all 0.3s ease-in-out;
+}
+
+.containerExp {
+    background: #E7E7E7;
+    border: 2px solid #BEBEBE;
+    border-radius: 4px;
+    color: #BEBEBE;
+}
+
+.container1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 14px;
+    row-gap: 8px;
+}
+
+.yearlyPrice {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #3C4852;
+
+}
+
+.priceExp {
+    color: #BEBEBE;  
+}
+
+.monthlyLabel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 120%;
+    color: #BEBEBE;
+
+}
+
+.containerTitle {
+    position: relative;
+}
+
+.containerTitleTag {
+    position: absolute;
+    box-sizing: border-box;
+    top: -32px;
+    left: 10px;
+    height: 20px;
+    color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    padding: 4px 16px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 120%;
+    color: #FFFFFF;
+
+}
+
+.expBg {
+    background: #F77171;
+}
+.recBg {
+    background: #47BA68;
+}
+
+@media screen and (max-width: 868px) {
+    .container2 {
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .containerTitleTag {
+        top: -20px;
+        height: 16px;
+        padding: 2px 8px;
+    }
+    
+}

@@ -1,0 +1,222 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card {
+    width: 90%;
+    max-width: 449px;
+    height: auto;
+
+    background: #fff;
+    border-radius: 8px;
+    margin: 4rem auto 3rem;
+    padding: 32px 24px;
+    color: black;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125.3%;
+    color: #3C4852;
+
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.labelBtn {
+    width: 38px;
+    height: 38px;
+    background-color: #0096FF;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-weight: 600;
+}
+
+.label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    color: #3C4852;
+
+}
+
+.membership {
+    width: 100%;
+    height: auto;
+}
+
+.membershipForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.membershipTotal {
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.membershipTotalCost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.membershipTotalCostLabel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #3C4852;
+}
+
+
+.membershipDiscountContainer {
+    box-sizing: border-box;
+    width: 108%;
+    position: relative;
+    transform: translateX(-4%);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 12px;
+    gap: 16px;
+    background: linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(222, 67, 19, 0.2) 2.92%, rgba(222, 68, 20, 0.2) 6.37%, rgba(223, 69, 21, 0.2) 10.97%, rgba(223, 72, 22, 0.2) 16.59%, rgba(224, 75, 24, 0.2) 23.1%, rgba(225, 80, 27, 0.2) 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+    border-radius: 8px;
+}
+
+.membershipDiscountContainer1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.membershipDiscountContainer1Label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #DE4313;
+
+}
+
+.membershipTotalCostValue {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #3C4852;
+    
+}
+
+.membershipTotalLabel {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: #3C4852;
+
+}
+
+
+.membershipPrice {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #3C4852;
+}
+
+.membershipDiscountContainer2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.membershipDiscountContainer2Label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #DE4313;  
+}
+
+.myBtn {
+    padding: 10px 42px;
+}
+
+
+
+
+@media screen and (min-width: 868px) and (max-width: 967px) { 
+    .myBtn {
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .container {
+        justify-content: flex-start;
+    }
+    .card {
+        margin: 1rem auto 3rem;
+    }
+
+    .title {
+        font-size: 20px;  
+    }
+
+    .myBtn {
+        padding: 10px 16px;
+    }
+    
+}
+
+

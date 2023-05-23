@@ -1,0 +1,121 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content:space-between;
+    z-index: 5;
+    background-color: #fff;
+    height: 72px;
+    border-bottom: 1px solid #0048FF;
+}
+
+.image {
+    width: 160px;
+    aspect-ratio: 56/10;
+}
+.conatiner1 {
+    width: 50%;
+    padding-left: 4rem;
+    display: flex;
+
+}
+
+.navItems1 {
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding: 1rem 0rem;
+        column-gap: 2rem
+}
+
+.flexSpace {
+    display: flex;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.conatiner2 {
+    width: 50%;
+    padding-right: 4rem;
+    display: flex;
+}
+
+.navItems2 {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 1rem 0rem;
+    column-gap: 2rem;
+}
+
+
+.mobilehide {
+    display: flex;
+}
+
+.desktopHide {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 868px) {
+        .mobilehide {
+            display: none;
+        }
+
+        .conatiner1 {
+            padding-left: 1.5rem;
+        }
+        
+        
+        .conatiner2 {
+            padding-right: 1.5rem;
+        }
+
+        .image {
+            width: 120px;
+            aspect-ratio: 56/10;
+        }
+        
+        .desktopHide {
+            display: flex;
+        }
+
+        .menuContainer {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .menuItems {
+            position: absolute;
+            top: 56px;
+            min-height: 300px;
+            height: calc(100vh - 50px);
+            width: 100.5vw;
+            height: calc(100svh - 50px);
+            right: -25px;
+            z-index: 10;
+            transform: translateX(101vw);
+            transition: transform 0.3s ease-in-out;
+            background: linear-gradient(to right, #0048FF 4.63%, #0096FF 100%);
+            display: flex;
+            padding-top: 2rem;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 3rem;
+            
+        }
+
+        .menuActive {
+            transform: translateX(0px);
+        }
+
+    
+}
